@@ -51,12 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview_main);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-
-        recyclerView.addItemDecoration(new ItemDecoration(this,
-                DividerItemDecoration.VERTICAL));
-
-
+        
         recyclerView.setAdapter(madapter);
     }
 
