@@ -121,8 +121,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this,4));//每行的个数
 
 
-        recyclerView.addItemDecoration(new MyDividerItemDecoration(this,VERTICAL));
-        recyclerView.addItemDecoration(new MyDividerItemDecoration(this,HORIZONTAL));
+        recyclerView.addItemDecoration(new DividerGridItemDecoration(this));
+        recyclerView.addItemDecoration(new DividerGridItemDecoration(this));
         recyclerView.setAdapter(madapter);
     }
 
